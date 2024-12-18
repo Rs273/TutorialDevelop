@@ -19,7 +19,7 @@ public class TomcatConfiguration implements WebServerFactoryCustomizer<TomcatSer
         // AJPの利用を宣言
         Connector connector = new Connector("org.apache.coyote.ajp.AjpNio2Protocol");
 
-        // AJPの通信で8009バンポートを使うための指定
+        // AJPの通信で8009番ポートを使うための指定
         connector.setPort(8009);
 
         // secretという保護機能を利用しないようにする設定
